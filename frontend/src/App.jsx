@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 
-// const baseUrl = import.meta.env.VITE_BASEURL;
-
 function App() {
   const [jokes, setJokes] = useState([]);
 
