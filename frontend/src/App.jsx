@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get(`${baseUrl}/api/jokes`)
+      .get("/api/jokes")
       .then((response) => {
         setJokes(response.data);
       })
