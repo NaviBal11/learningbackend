@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/api/jokes", (req, res) => {
+app.get("/jokes", (req, res) => {
   const jokes = [
     {
       id: 1,
