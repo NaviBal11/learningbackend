@@ -2,12 +2,14 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
 
+const URL = import.meta.env.VITE_BACKEND_URL;
+
 function App() {
   const [jokes, setJokes] = useState([]);
 
   useEffect(() => {
     axios
-      .get("/api/jokes")
+      .get(`${URL}/api/jokes`)
       .then((response) => {
         console.log(response.data);
         setJokes(response.data);
